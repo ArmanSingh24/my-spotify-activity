@@ -4,6 +4,7 @@
 <head>
   <title>Spotify Currently Playing</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@400;500;600;700;800;900&display=swap');
     body {
       background-color: black;
     }
@@ -12,6 +13,7 @@
       text-align: center;
       margin: 70px;
       color: white;
+      font-family: 'Geologica', sans-serif;
     }
 
     .heading span {
@@ -22,6 +24,7 @@
     #track {
       text-align: center;
       color: white;
+      font-family: 'Geologica', sans-serif;
     }
 
     #track img {
@@ -71,7 +74,6 @@
         });
 
         accessToken = response.data.access_token;
-        console.log('Access Token refreshed successfully:', accessToken);
       } catch (error) {
         console.error('Error refreshing Access Token:', error);
       }
@@ -112,9 +114,6 @@
 
     // Refresh the token every hour (3600 seconds)
     setInterval(refreshAccessToken, 3600000);
-
-    // Example usage: Get currently playing track
-
 
   </script>
 </body>
