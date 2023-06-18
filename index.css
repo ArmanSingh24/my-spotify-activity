@@ -3,13 +3,22 @@
 body {
   background-color: black;
   user-select: none;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .heading {
-  margin: 70px;
+  margin: 40px 0 60px 0;
   color: white;
   font-family: 'Geologica', sans-serif;
+  text-align: center;
 }
 
 .heading span {
@@ -19,6 +28,7 @@ body {
 #track {
   color: white;
   font-family: 'Geologica', sans-serif;
+  text-align: center;
 }
 
 #track img {
@@ -27,5 +37,17 @@ body {
 }
 
 #track h2 {
-  margin: 0.5em 0;
+  margin: 0.7em 8px;
+}
+
+@media only screen and (max-width: 460px) {
+  .main{
+    width: 100%;
+  }
+  .heading {
+    font-size: 13px;
+  }
+  #track h2{
+    font-size: 20px;
+  }
 }
