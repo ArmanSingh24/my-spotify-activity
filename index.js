@@ -1,3 +1,4 @@
+//pls don't steal my id and secret, i'm noob i dont know how to hide them 
 const clientId = '7ceafa618104424e8e3593fe41098783';
 const clientSecret = 'b01e8b96574a43d28676e1850517ca06';
 const refreshToken = 'AQAO5NByLnT_lpayZn48gvWmSsCWper3nzlruYSrVev_QGX__tlgXm_3cDvw6625cTtHWEJqSMBDlpI2MPM4U2lSTzw5ErdaeB94vgv9cQh7DKE-F5_PkXJ5j09CUhNyOHY';
