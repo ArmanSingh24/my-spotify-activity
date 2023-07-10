@@ -64,9 +64,6 @@ body::before {
     font-size: 13px;
   }
 
-  #track {
-    background-color: rgba(0, 0, 0, 0);
-  }
 
   #track h2 {
     font-size: 20px;
