@@ -64,6 +64,9 @@ body::before {
     font-size: 13px;
   }
 
+  #track img {
+    margin: 20px 20px 2px;
+ }
 
   #track h2 {
     font-size: 20px;
