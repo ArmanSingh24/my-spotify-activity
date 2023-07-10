@@ -4,6 +4,7 @@ body {
   background-color: black;
   background-size: cover;
   background-position: center;
+  transition: 0.7s ease-in-out;
   user-select: none;
   display: flex;
   align-items: center;
