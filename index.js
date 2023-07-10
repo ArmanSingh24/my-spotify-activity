@@ -38,7 +38,11 @@ function updateTrack() {
     })
     .then(data => {
       let imageUrl = `${data.item.album.images[0].url}`;
+      // Set background image 
       document.body.style.backgroundImage = `url(${imageUrl})`;
+      document.body.style.backgroundRepeat = 'no-repeat';
+      document.body.style.backgroundSize = 'contain';
+      document.body.style.backgroundPosition = 'center';
       // Display the track information
       document.querySelector('#track').innerHTML = `
         <img src="${data.item.album.images[0].url}" width="250">
