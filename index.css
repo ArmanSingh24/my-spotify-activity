@@ -2,7 +2,8 @@
 
 body {
   background-color: black;
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
   background-position: center;
   user-select: none;
   display: flex;
