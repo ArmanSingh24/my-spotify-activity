@@ -40,7 +40,6 @@ function updateTrack() {
       let imageUrl = `${data.item.album.images[0].url}`;
       // Set background image 
       document.body.style.backgroundImage = `url(${imageUrl})`;
-
       document.body.style.backgroundSize = '100% 100%';
       document.body.style.backgroundPosition = 'center';
       // Display the track information
