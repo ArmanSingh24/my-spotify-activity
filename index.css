@@ -2,6 +2,7 @@
 
 body {
   background-color: black;
+  transition: 0.7s ease-in-out;
   user-select: none;
   display: flex;
   align-items: center;
