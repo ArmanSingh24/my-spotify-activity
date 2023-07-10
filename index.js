@@ -41,7 +41,7 @@ function updateTrack() {
       // Set background image 
       document.body.style.backgroundImage = `url(${imageUrl})`;
       document.body.style.backgroundRepeat = 'no-repeat';
-      document.body.style.backgroundSize = 'contain';
+      document.body.style.backgroundSize = 'cover';
       document.body.style.backgroundPosition = 'center';
       // Display the track information
       document.querySelector('#track').innerHTML = `
