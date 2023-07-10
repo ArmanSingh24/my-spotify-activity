@@ -20,6 +20,10 @@ body::before {
   left: 0;
   z-index: -1;
   backdrop-filter: blur(10px);
+  
+  @media (max-width: 460px) {
+     backdrop-filter: blur(30px);
+   }
 }
 
 .main {
