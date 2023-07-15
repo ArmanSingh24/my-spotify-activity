@@ -19,7 +19,7 @@ body::before {
   top: 0;
   left: 0;
   z-index: -1;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(17px);
   
   @media only screen and (max-width: 460px) {
      backdrop-filter: blur(30px);
