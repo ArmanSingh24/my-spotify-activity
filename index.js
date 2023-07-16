@@ -55,8 +55,8 @@ function updateTrack() {
     });
 }
 
-// Update the track information every .5 seconds
-setInterval(updateTrack, 500);
+// Update the track information every 1 seconds
+setInterval(updateTrack, 1000);
 // Initial token refresh
 refreshAccessToken();
 // Refresh the token every hour (3600 seconds)
