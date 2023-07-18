@@ -3,7 +3,7 @@
 * Displays my Spotify's currently playing track in a unique way
 
 ## Preview
-
+![image](https://cdn.discordapp.com/attachments/1114497979529834510/1130775896844939325/IMG_20230716_211644.jpg)
 ## Spotify API
 
 * Create a Spotify Application through [Spotify Developer Dashboard](https://developer.spotify.com/dashboard)
