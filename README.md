@@ -9,7 +9,7 @@
 
 * PC -
 
-Blue screen of sadness. RIP My PC 🥀 
+Preview Currently Unavailable.
 ## Spotify API
 
 * Create a Spotify Application through [Spotify Developer Dashboard](https://developer.spotify.com/dashboard)
