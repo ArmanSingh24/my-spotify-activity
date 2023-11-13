@@ -5,11 +5,14 @@
 ## Preview
 * Mobile devices -
 
-![image](https://cdn.discordapp.com/attachments/1114497979529834510/1130775896844939325/IMG_20230716_211644.jpg)
+![image](https://cdn.discordapp.com/attachments/1114497979529834510/1173493591411277844/chrome_g5ded1rj3Z.png)
+![image](https://cdn.discordapp.com/attachments/1114497979529834510/1173493591654543502/chrome_NzYMcKYH1Y.png)
+![image](https://cdn.discordapp.com/attachments/1114497979529834510/1173493591914582056/chrome_D1fdW2mMV4.png)
 
 * PC -
 
-Preview Currently Unavailable.
+![image](https://cdn.discordapp.com/attachments/1114497979529834510/1173490683387064372/chrome_g0OCyVKgYP.png)
+
 ## Spotify API
 
 * Create a Spotify Application through [Spotify Developer Dashboard](https://developer.spotify.com/dashboard)
