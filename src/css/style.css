@@ -27,7 +27,24 @@ body::before {
   flex-direction: column;
   justify-content: center;
 }
+.main:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
 
+/* Dim + increase blur of the background when .main is hovered.*/
+body::before {
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0);
+  transition: -webkit-backdrop-filter 0.6s ease, backdrop-filter 0.6s ease, background-color 0.6s ease;
+}
+
+body:has(.main:hover)::before {
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.45);
+}
 
 #track {
   color: white;
@@ -45,6 +62,16 @@ body::before {
   margin-top: 20px;
 }
 
+/* Make the track block clickable and visually indicate that */
+#track .track-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
 #track h2 {
   margin: 15px 30px -10px 30px;
 }
@@ -52,6 +79,36 @@ body::before {
 #track p {
   margin: 20px 0px 20px 0px;
 }
+
+
+#track progress {
+  width: 80%;
+  height: 8px;
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  border-radius: 6px;
+  background-color: rgba(255,255,255,0.15);
+  margin: 8px auto 24px;
+  display: block;
+}
+
+
+#track progress::-webkit-progress-bar {
+  background-color: rgba(255,255,255,0.12);
+  border-radius: 6px;
+}
+#track progress::-webkit-progress-value {
+  background: #fff;
+  border-radius: 6px;
+}
+
+
+#track progress::-moz-progress-bar {
+  background: #fff;
+  border-radius: 6px;
+}
+
 
 @media only screen and (max-width: 460px) {
   #track h2 {
