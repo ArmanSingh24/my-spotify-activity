@@ -3,15 +3,8 @@
 * Displays my Spotify's currently playing track in a unique way
 
 ## Preview
-* Mobile devices -
 
-![image](https://cdn.discordapp.com/attachments/1114497979529834510/1173493591411277844/chrome_g5ded1rj3Z.png)
-![image](https://cdn.discordapp.com/attachments/1114497979529834510/1173493591654543502/chrome_NzYMcKYH1Y.png)
-![image](https://cdn.discordapp.com/attachments/1114497979529834510/1173493591914582056/chrome_D1fdW2mMV4.png)
-
-* PC -
-
-![image](https://cdn.discordapp.com/attachments/1114497979529834510/1173490683387064372/chrome_g0OCyVKgYP.png)
+![image](https://media.discordapp.net/attachments/1277358579862470719/1418261077271121971/Screenshot_2025-09-18_210505.png?ex=68cd7a0e&is=68cc288e&hm=87d4642798705f0ba5a809548ba9bb79b7cbe51e6e382b90fd4617d6cf5d98e2&=&format=webp&quality=lossless&width=1258&height=708)
 
 ## Spotify API
 
