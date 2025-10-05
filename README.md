@@ -57,7 +57,7 @@ Need help? Watch [video tutorial](https://www.youtube.com/watch?v=yAXoOolPvjU) b
 ### 3. Local Development
 1. Clone and install:
 ```bash
-git clone https://github.com/yourusername/my-spotify-activity.git
+git clone https://github.com/ArmanSingh24/my-spotify-activity.git
 cd my-spotify-activity
 npm install
 ```
