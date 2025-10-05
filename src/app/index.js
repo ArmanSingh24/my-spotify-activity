@@ -1,29 +1,19 @@
-const clientId = CLIENT_ID;
-const clientSecret = CLIENT_SECRET;
-const refreshToken = REFRESH_TOKEN;
 let accessToken = '';
 let currentTrackData = null;
 let progressTimer = null;
 
 async function refreshAccessToken() {
-  const authOptions = {
-    url: 'https://accounts.spotify.com/api/token',
-    headers: {
-      'Authorization': 'Basic ' + btoa(`${clientId}:${clientSecret}`),
-      'Content-Type': 'application/x-www-form-urlencoded'
-    },
-    data: 'grant_type=refresh_token&refresh_token=' + refreshToken
-  };
-
   try {
-    const response = await axios.post(authOptions.url, authOptions.data, {
-      headers: authOptions.headers
-    });
-
-    accessToken = response.data.access_token;
+    const res = await fetch('/api/token');
+    if (!res.ok) {
+      const err = await res.json().catch(() => ({}));
+      throw new Error('Failed to fetch access token from backend: ' + (err.error || res.status));
+    }
+    const data = await res.json();
+    accessToken = data.access_token;
     return accessToken;
   } catch (error) {
-    console.error('Error refreshing Access Token:', error);
+    console.error('Error fetching access token from backend:', error);
   }
 }
 function changeBackgroundColor() {
