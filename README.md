@@ -1,46 +1,111 @@
-## 🚀 Live at https://armansingh24.github.io/my-spotify-activity/
+# My Spotify Activity 🎵
 
-* Displays my Spotify's currently playing track in a unique way
+## 🚀 Live Demo
+- [View Live Demo](https://my-spotify-activity.vercel.app) - Deployed on Vercel
+
+Displays my Spotify's currently playing track in a unique way with real-time updates and a beautiful UI.
 
 ## Preview
-
 ![image](https://media.discordapp.net/attachments/1277358579862470719/1418261077271121971/Screenshot_2025-09-18_210505.png?ex=68cd7a0e&is=68cc288e&hm=87d4642798705f0ba5a809548ba9bb79b7cbe51e6e382b90fd4617d6cf5d98e2&=&format=webp&quality=lossless&width=1258&height=708)
 
-## Spotify API
+## Features
+- 🎵 Real-time currently playing track display
+- 🖼️ Dynamic background based on album art
+- ⏳ Progress bar showing song position
+- 🔒 Secure token handling via serverless function
+- 📱 Responsive design
 
+## Project Structure
+```
+├── api/
+│   └── token.js          # Serverless function for token refresh
+├── src/
+│   ├── app/
+│   │   └── index.js      # Frontend JavaScript
+│   ├── css/
+│   │   └── style.css     # Styles
+│   └── img/
+│       └── ico.png       # Favicon
+└── index.html            # Main HTML file
+```
+
+## Setup Instructions
+
+### 1. Spotify API Setup
 * Create a Spotify Application through [Spotify Developer Dashboard](https://developer.spotify.com/dashboard)
 * Click on **Edit Settings**
-* Take note of:
+* Note down:
     * `Client ID`
     * `Client Secret`
 * In **Redirect URIs**:
     * Add `http://localhost/callback/`
 
-## Refresh Token
-
-* Navigate to the following URL:
-
+### 2. Get Refresh Token
+Navigate to:
 ```
 https://accounts.spotify.com/authorize?client_id={SPOTIFY_CLIENT_ID}&response_type=code&scope=user-read-currently-playing&redirect_uri=http://localhost/callback/
 ```
-
-* After logging in, save the {CODE} portion of: `http://localhost/callback/?code={CODE}`
-
-* Create a string combining `{SPOTIFY_CLIENT_ID}:{SPOTIFY_CLIENT_SECRET}` (e.g. `5n7o4v5a3t7o5r2e3m1:5a8n7d3r4e2w5n8o2v3a7c5`) and **encode** into [Base64](https://base64.io/).
-
-* Then run a [cURL command](https://httpie.org/run) in the form of:
+* After login, save the {CODE} from: `http://localhost/callback/?code={CODE}`
+* Create Base64 string from `{SPOTIFY_CLIENT_ID}:{SPOTIFY_CLIENT_SECRET}`
+* Get refresh token using:
 ```sh
 curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -H "Authorization: Basic {BASE64}" -d "grant_type=authorization_code&redirect_uri=http://localhost/callback/&code={CODE}" https://accounts.spotify.com/api/token
 ```
 
-* Save the Refresh token
+Need help? Watch [video tutorial](https://www.youtube.com/watch?v=yAXoOolPvjU) by API-University
 
-* Watch [video tutorial](https://www.youtube.com/watch?v=yAXoOolPvjU) by API-University
+### 3. Local Development
+1. Clone and install:
+```bash
+git clone https://github.com/yourusername/my-spotify-activity.git
+cd my-spotify-activity
+npm install
+```
 
-## Deployment
+2. Create `.env` file:
+```env
+CLIENT_ID=your_spotify_client_id
+CLIENT_SECRET=your_spotify_client_secret
+REFRESH_TOKEN=your_refresh_token
+```
 
-* Replace my Client Id, Client Secret and Refresh Token with Yours.
+3. Run locally:
+```bash
+vercel dev
+```
 
-* Create a new Repo, drop the project files.
+### 4. Deployment
+Two options for deployment:
 
-* Deploy!
+#### Option A: Vercel (Recommended)
+1. Install Vercel CLI:
+```bash
+npm i -g vercel
+```
+
+2. Deploy:
+```bash
+vercel
+```
+
+3. Add environment variables in Vercel project settings:
+- CLIENT_ID
+- CLIENT_SECRET
+- REFRESH_TOKEN
+
+#### Option B: GitHub Pages
+Note: The serverless function won't work on GitHub Pages. Use this only if you want to modify the code to use client-side token refresh (less secure).
+
+## Security Notes
+- Uses serverless function to keep credentials secure
+- Environment variables for sensitive data
+- Short-lived access tokens
+- Never commit `.env` file
+
+## Contributing
+Feel free to open issues and pull requests!
+
+## Credits
+- Built with Spotify Web API
+- Original concept inspired by various Spotify current track displays
+- Enhanced with serverless backend for better security
