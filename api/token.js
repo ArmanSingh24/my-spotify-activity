@@ -1,7 +1,5 @@
 // Serverless endpoint to refresh Spotify access token using REFRESH_TOKEN stored in env vars.
 // Returns JSON: { access_token, expires_in }
-import fetch from 'node-fetch';
-
 let tokenCache = { access_token: null, expires_at: 0 };
 
 // Vercel serverless function format
