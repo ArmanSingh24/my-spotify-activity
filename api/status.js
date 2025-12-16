@@ -1,4 +1,7 @@
 export default async function handler(req, res) {
+  // Allow public read access (CORS) 🥀
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Methods", "GET");
   try {
     // 1. Get access token from your existing token endpoint
     const tokenRes = await fetch(
