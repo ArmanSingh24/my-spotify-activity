@@ -109,3 +109,7 @@ Feel free to open issues and pull requests!
 - Built with Spotify Web API
 - Original concept inspired by various Spotify current track displays
 - Enhanced with serverless backend for better security
+
+
+Made with ❤️
+by Arman Singh
