@@ -1,4 +1,4 @@
-# My Spotify Activity 🎵
+# Live Spotify Activity Widget 🎵
 
 ## 🚀 Live Demo
 - [View Live Demo](https://my-spotify-activity.vercel.app) - Deployed on Vercel
