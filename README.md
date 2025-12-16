@@ -6,7 +6,7 @@
 Displays my Spotify's currently playing track in a unique way with real-time updates and a beautiful UI.
 
 ## Preview
-![image](https://media.discordapp.net/attachments/1277358579862470719/1418261077271121971/Screenshot_2025-09-18_210505.png?ex=68cd7a0e&is=68cc288e&hm=87d4642798705f0ba5a809548ba9bb79b7cbe51e6e382b90fd4617d6cf5d98e2&=&format=webp&quality=lossless&width=1258&height=708)
+![Preview](./preview/desktop.png)
 
 ## Features
 - 🎵 Real-time currently playing track display
